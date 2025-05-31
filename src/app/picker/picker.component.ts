@@ -21,7 +21,7 @@ export class PickerComponent implements OnInit {
 
   ngOnInit(): void {
     // Fetch the movies.json file from assets folder
-    this.http.get<any[]>('/movies.json').subscribe(data => {
+    this.http.get<any[]>('/assets/movies.json').subscribe(data => {
       console.log(data)
       this.movies = data;
     });
