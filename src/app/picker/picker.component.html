@@ -1,3 +1,11 @@
-<div>
-    <button>Click</button>
+<div class="container-btn" [ngStyle]="{ 'background-image': 'url(' + backgroundImageUrl + ')' }">
+  <a class="generate-btn" (click)="pickRandomMovie()">🎬 Pick a Movie</a>
+
+  <div class="card" *ngIf="randomMovie">
+    <img [src]="'https://image.tmdb.org/t/p/w500' + randomMovie.poster_path" class="card-img-top" alt="{{ randomMovie.title }}" />
+    <div class="card-body">
+      <h5 class="card-title">{{ randomMovie.title }}</h5>
+      <p class="card-text">{{ randomMovie.overview || 'No overview available.' }}</p>
+    </div>
+  </div>
 </div>
