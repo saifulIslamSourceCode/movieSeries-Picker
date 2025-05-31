@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PickerComponent } from './picker/picker.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PickerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
