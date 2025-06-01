@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 const API_KEY = '8e6630625efdefaaa9c85eb70e274607';
-const TOTAL_PAGES = 20;
+const TOTAL_PAGES = 100;
 const allMovies = [];
 
 async function fetchMovies() {
